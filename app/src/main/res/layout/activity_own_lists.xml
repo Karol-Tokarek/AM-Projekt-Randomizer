@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OwnListsActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout4"
+        android:layout_width="388dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="589dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/buttonLoadList"
+            android:layout_width="187dp"
+            android:layout_height="62dp"
+            android:backgroundTint="#0F9D58"
+            android:text="Załaduj listę"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/buttonShuffleList"
+            android:layout_width="188dp"
+            android:layout_height="62dp"
+            android:backgroundTint="#0F9D58"
+            android:text="Pomieszaj!"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/buttonNewListCreate"
+            android:layout_width="188dp"
+            android:layout_height="62dp"
+            android:backgroundTint="#0F9D58"
+            android:text="Nowa lista"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/buttonFindOne"
+            android:layout_width="189dp"
+            android:layout_height="62dp"
+            android:backgroundTint="#0F9D58"
+            android:text="Wybierz jeden!"
+            app:layout_column="2"
+            app:layout_row="1" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="372dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="457dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout4">
+
+        <TextView
+            android:id="@+id/ListsView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="373dp"
+        android:layout_height="422dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView4">
+
+        <TextView
+            android:id="@+id/resultListTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

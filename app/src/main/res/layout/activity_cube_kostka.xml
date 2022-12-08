@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    tools:context=".CubeKostkaActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="410dp"
+        android:layout_height="728dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="406dp"
+            android:layout_height="146dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/throwCubeButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="194dp"
+                android:layout_height="69dp"
+                android:text="Ile kostek?"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="34sp"
+                app:layout_column="0"
+                app:layout_row="0" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="194dp"
+                android:layout_height="69dp"
+                android:text="Typ kostki"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="34sp"
+                app:layout_column="0"
+                app:layout_row="1" />
+
+            <Spinner
+                android:id="@+id/spinnerHowMuchCubes"
+                android:layout_width="209dp"
+                android:layout_height="65dp"
+                android:background="#35393b"
+                android:contentDescription="@string/appbar_scrolling_view_behavior"
+                android:popupBackground="#0F9D58"
+                app:layout_column="1"
+                app:layout_row="0" />
+
+            <Spinner
+                android:id="@+id/spinnerTypeCube"
+                android:layout_width="209dp"
+                android:layout_height="65dp"
+                android:background="#35393b"
+                android:contentDescription="@string/appbar_scrolling_view_behavior"
+                android:popupBackground="#0F9D58"
+                app:layout_column="1"
+                app:layout_row="1" />
+
+        </androidx.gridlayout.widget.GridLayout>
+
+        <Button
+            android:id="@+id/throwCubeButton"
+            android:layout_width="366dp"
+            android:layout_height="94dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="472dp"
+            android:backgroundTint="#0F9D58"
+            android:backgroundTintMode="add"
+            android:text="RZUĆ KOSTKĄ!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+        <TextView
+            android:id="@+id/displayMacro"
+            android:layout_width="378dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="343dp"
+            android:text="Tutaj pojawi się działanie..."
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/throwCubeButton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

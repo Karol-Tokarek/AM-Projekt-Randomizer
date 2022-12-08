@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/o_mnie"
+        android:title="O mnie" />
+    <item android:id="@+id/wyjscie"
+    android:title="Wyjście" />
+    <item android:id="@+id/info"
+        android:title="Informacje bieżące" />
+
+</menu>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cnt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                style="@style/Theme.LAYOUTPROJECT01"
+
+                android:id="@+id/buttonNumbers"
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:insetRight="0dp"
+                android:text="LICZBY"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:icon="@drawable/liczbyv2"
+                app:iconTint="@android:color/transparent"
+                app:iconTintMode="add" />
+
+            <Button
+                android:id="@+id/buttonYesOrNot"
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:text="TAK CZY NIE?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:icon="@drawable/takczynie"
+
+                app:iconTint="@android:color/transparent"
+                app:iconTintMode="add"/>
+
+            <Button
+                android:id="@+id/buttonCoinGenerate"
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:text="RZUTY MONETĄ"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:icon="@drawable/coin"
+                app:iconTint="@android:color/transparent"
+                app:iconTintMode="add" />
+
+            <Button
+                android:id="@+id/buttonPaperRockSciz"
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:text="PAPIER KAMIEŃ CZY NOŻYCIE?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:icon="@drawable/nozyce1"
+                app:iconTint="@android:color/transparent"
+                app:iconTintMode="add" />
+
+            <Button
+                android:id="@+id/buttonCubeGenerate"
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:text="RZUTY KOSTKĄ"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:icon="@drawable/cubes"
+                app:iconTint="@android:color/transparent"
+                app:iconTintMode="add" />
+
+            <Button
+                android:id="@+id/buttonColorsGenerate"
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:text="KOLORY"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:icon="@drawable/colorwheel"
+                app:iconTint="@android:color/transparent"
+                app:iconTintMode="add" />
+            />
+
+            <Button
+                android:id="@+id/buttonTeamsGenerate"
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:text="DRUŻYNY"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:icon="@drawable/team_28"
+                app:iconTint="@android:color/transparent"
+                app:iconTintMode="add" />
+            />
+
+            <Button
+                android:id="@+id/buttonLettersGenerate"
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:text="LITERY"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:icon="@drawable/_7482"
+                app:iconTint="@android:color/transparent"
+                app:iconTintMode="add" />
+            />
+
+            <Button
+                android:id="@+id/buttonOwnLists"
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:text="WŁASNE LISTY"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:icon="@drawable/checklist"
+                app:iconTint="@android:color/white"
+                />
+            />
+
+            <Button
+                android:id="@+id/buttonCardsGenerate"
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:text="KARTY"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:icon="@drawable/cards"
+                app:iconTint="@android:color/transparent"
+                app:iconTintMode="add" />
+            />
+
+            <Button
+                android:id="@+id/buttonCountriesGenerate"
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:text="KRAJE ŚWIATA"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:icon="@drawable/countries"
+                app:iconTint="@android:color/holo_green_dark"
+                 />
+            />
+
+            <Button
+                android:id="@+id/buttonStatesUSA"
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:text="STANY USA"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:icon="@drawable/usa"
+                app:iconTint="@android:color/transparent"
+                app:iconTintMode="add" />
+            />
+
+            <Button
+                android:id="@+id/buttonDateTimeGenerate"
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:text="DATA"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:icon="@drawable/date_63"
+                app:iconTint="@android:color/transparent"
+                app:iconTintMode="add" />
+            />
+
+            <Button
+                android:id="@+id/buttonTimeGenerate"
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:text="CZAS"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:icon="@drawable/clock"
+                app:iconTint="@android:color/transparent"
+                app:iconTintMode="add" />
+            />
+
+            <Button
+                android:id="@+id/buttonPassGenerate"
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:text="HASŁA"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:icon="@drawable/safety"
+                app:iconTint="@android:color/transparent"
+                app:iconTintMode="add" />
+            />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

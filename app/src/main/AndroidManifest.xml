@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.layout_project01">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LAYOUTPROJECT01"
+        tools:targetApi="31">
+        <activity
+            android:name=".NewListCreate"
+            android:exported="false" />
+        <activity
+            android:name=".TeamsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TimeStamp"
+            android:exported="false" />
+        <activity
+            android:name=".PassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DateTimeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StanyUSAActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CountriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OwnListsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CardsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LiteryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CubeKostkaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PapierKamienActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ColorsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PickMoneySideActivity"
+            android:exported="false" />
+        <activity
+            android:name=".YesOrNotActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NumbersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
